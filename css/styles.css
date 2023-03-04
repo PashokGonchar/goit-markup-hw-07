@@ -50,20 +50,81 @@ body {
 }
 
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-color);
+    align-items: center;
+  }
+
+  .logo-web {
+    color: var(--iris-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mobile-menu-open {
+    background-color: transparent;
+    /* border: none; */
+    padding: 0;
+  }
+}
+
+/* 
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
-}
+} */
 
 /* =========HEADER========= */
-.main-nav {
+
+/* .main-nav {
   display: flex;
   border-bottom: 1px solid var(--cornflower-color);
 }
@@ -179,11 +240,11 @@ body {
 .contact-phone-number-link:hover,
 .contact-phone-number-link:focus {
   color: var(--ocean-color);
-}
+} */
 
 /* =========HERO========= */
 
-.hero {
+/* .hero {
   background-color: var(--navy-color);
   text-align: center;
   background-image: linear-gradient(
@@ -206,11 +267,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin: 0 auto 45px;
-}
+} */
 
 /* =========HERO BUTTON========= */
 
-.hero-button {
+/* .hero-button {
   padding: 16px 32px;
   font-family: var(--primary-font);
   font-weight: 500;
@@ -232,11 +293,11 @@ body {
 .hero-button:focus {
   background-color: var(--ocean-color);
   box-shadow: 0px 4px 4px 0px #00000026;
-}
+} */
 
 /* =========ADVANTAGES========= */
 
-.title {
+/* .title {
   display: flex;
 }
 
@@ -277,11 +338,11 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(---navy-color);
-}
+} */
 
 /* =========CONTENT WORKING========= */
 
-.working-section {
+/* .working-section {
   padding-top: 0;
 }
 
@@ -300,11 +361,11 @@ body {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 72px;
-}
+} */
 
 /* =========OUR TEAM========= */
 
-.subject-team {
+/* .subject-team {
   font-size: 36px;
   line-height: 1.12;
   letter-spacing: 0.02em;
@@ -383,11 +444,11 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--ocean-color);
-}
+} */
 
 /* =========CUSTOMERS========= */
 
-.customers-section {
+/* .customers-section {
   padding-top: 0px;
 }
 
@@ -431,11 +492,11 @@ body {
 .customers-list-icon {
   width: 104px;
   height: 56px;
-}
+} */
 
 /* =========FOOTER========= */
 
-.footer {
+/* .footer {
   width: 264px;
 }
 
@@ -465,11 +526,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cornflower-color);
-}
+} */
 
 /* =========FOOTER SOCIAL LIST========= */
 
-.footer-social-list {
+/* .footer-social-list {
   display: block;
   margin-left: 120px;
 }
@@ -510,11 +571,11 @@ body {
 .footer-list-link:hover,
 .footer-list-link:focus {
   background-color: var(--green-color);
-}
+} */
 
 /* =========FOOTER SUBSCRIPTION========= */
 
-.footer-subscription {
+/* .footer-subscription {
   font-family: var(--primary-font);
   display: block;
   margin-left: 80px;
@@ -594,11 +655,11 @@ input {
   top: 50%;
   transform: translateY(-50%);
   right: 24px;
-}
+} */
 
 /* =========WORKS BUTTON========= */
 
-.main-button {
+/* .main-button {
   padding-top: 96px;
 }
 
@@ -644,11 +705,11 @@ input {
 .nav-button:focus {
   background-color: var(--ocean-color);
   color: var(--white-color);
-}
+} */
 
 /* =========WORKS CARDS========= */
 
-.works-cards {
+/* .works-cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -691,11 +752,11 @@ input {
   border-right: 1px solid var(--cornflower-color);
   border-left: 1px solid var(--cornflower-color);
   border-bottom: 1px solid var(--cornflower-color);
-}
+} */
 
 /* =========OVERLAY========= */
 
-.overlay {
+/* .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -722,11 +783,11 @@ input {
 .works-wrapper-link:hover .overlay,
 .works-wrapper-link:focus .overlay {
   transform: translate(0, 0);
-}
+} */
 
 /* =========BACKDROP========= */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -745,11 +806,11 @@ input {
   visibility: hidden;
   pointer-events: none;
   transform: scale(1.5);
-}
+} */
 
 /* =========MODAL========= */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -794,11 +855,11 @@ input {
   width: 8px;
   height: 8px;
   background-color: transparent;
-}
+} */
 
 /* =========DESIGN MODAL========= */
 
-.header-modal {
+/* .header-modal {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -956,4 +1017,4 @@ input {
 
 .check-input:checked + .check-icon {
   background-image: url('../images/checkbox-click.svg');
-}
+} */
