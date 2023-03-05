@@ -127,8 +127,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: #4d5ae5;
-    
+    background-color: var(--white-color);
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -143,36 +143,78 @@ body {
     visibility: visible;
     pointer-events: auto;
   }
-}
 
-.mobile-menu-container {
-  position: relative;
-  padding-top: 80px;
-  padding-left: 40px;
-  padding-bottom: 40px;
-}
+  .mobile-menu-container {
+    position: relative;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
 
-.modal-close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 24px;
-  height: 24px;
-  border: #0000001a;
-  border-radius: 50%;
-  padding: 0;
-  background-color: var(--cornflower-color);
+    width: 24px;
+    height: 24px;
+    border: #0000001a;
+    border-radius: 50%;
+    padding: 0;
+    background-color: var(--cornflower-color);
 
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
 
-.close-btn {
-  width: 8px;
-  height: 8px;
-  background-color: transparent;
+  .close-btn {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+  }
+
+  .mobile-page-nav {
+    padding-bottom: 284px;
+  }
+
+  .mobile-list-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .social-list {
+    display: flex;
+    gap: 56px;
+    align-items: flex-end;
+  }
+
+  .social-list-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris-color);
+    fill: var(--cloud-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: var(--ocean-color);
+  }
 }
 
 /* 
