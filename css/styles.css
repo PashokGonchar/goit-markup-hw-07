@@ -93,6 +93,7 @@ body {
   .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--cornflower-color);
   }
 
   .mobile-menu-icon {
@@ -146,10 +147,14 @@ body {
 
   .mobile-menu-container {
     position: relative;
-    height: 100%;
+    height: 100vh;
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .modal-close-btn {
@@ -177,12 +182,33 @@ body {
 
   .mobile-page-nav {
     padding-bottom: 284px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-color);
   }
 
   .mobile-list-nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+
+  .mobile-menu-contacts > .list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+
+  .mobile-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
   }
 
   .social-list {
