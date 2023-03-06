@@ -251,7 +251,7 @@ body {
   }
 }
 
-@media screen and (max-width:370px) {
+@media screen and (max-width:420px) {
   .social-list {
     gap: 36px;
     margin-bottom: 160px;
