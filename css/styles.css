@@ -447,6 +447,10 @@ body {
 
   /* =========CUSTOMERS========= */
 
+.customers-section {
+  padding-bottom: 24px;
+}
+
 .customers {
   font-weight: 700;
   font-size: 36px;
@@ -491,10 +495,6 @@ body {
 
 .customers-list-item {
   padding-bottom: 72px;
-}
-
-.customers-list-item:nth-last-child(-n + 3){
-  padding-bottom: 0;
 }
 
 /* =========FOOTER========= */
