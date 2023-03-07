@@ -444,6 +444,62 @@ body {
   .social-list-link:focus {
     background-color: var(--ocean-color);
   }
+
+  /* =========CUSTOMERS========= */
+
+.customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-color);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.customers-list {
+  padding-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 88px;
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+  fill: var(--light-slate-color);
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  fill: var(--ocean-color);
+  border: 1px solid var(--ocean-color);
+}
+
+.customers-list-icon {
+  width: 104px;
+  height: 56px;
+}
+
+.customers-list-item {
+  padding-bottom: 72px;
+}
+
+.customers-list-item:nth-last-child(-n + 3){
+  padding-bottom: 0;
+}
+
+/* =========FOOTER========= */
+
+
 }
 
 @media screen and (min-device-pixel-ratio: 2),
