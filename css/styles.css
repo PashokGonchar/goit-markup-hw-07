@@ -501,7 +501,7 @@ body {
 
   .footer-list-text {
     text-align: start;
-    width: 268px;
+    width: 308px;
   }
 
   .logo-footer {
@@ -523,7 +523,7 @@ body {
     padding-bottom: 96px;
 
     background-color: var(--navy-color);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower-color);
@@ -548,6 +548,7 @@ body {
     display: flex;
     margin-top: 16px;
     gap: 16px;
+    justify-content: center;
   }
 
   .footer-list-icon {
