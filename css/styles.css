@@ -519,8 +519,9 @@ body {
   }
 
   .footer-text {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
     background-color: var(--navy-color);
     font-size: 18px;
     line-height: 1.5;
