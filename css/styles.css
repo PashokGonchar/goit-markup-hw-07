@@ -625,6 +625,8 @@ body {
   }
 
   .subscription-mail {
+    display: block;
+
     font-size: 12px;
     line-height: 2;
     width: 200px;
@@ -912,17 +914,17 @@ body {
   .check-input:checked + .check-icon {
     background-image: url('../images/checkbox-click.svg');
   }
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 190dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/dark-bg@2x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 190dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg@2x.jpg);
+    }
   }
 }
 
