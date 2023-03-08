@@ -69,6 +69,9 @@ body {
   .mobile-menu-open {
     display: none;
   }
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -205,7 +208,7 @@ body {
     color: var(--navy-color);
   }
 
-  .mobile-list-contacts .link{
+  .mobile-list-contacts .link {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.12;
@@ -920,6 +923,16 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/dark-bg@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .icon-advantages-list {
+    display: none;
+  }
+
+  .working-section {
+    display: none;
   }
 }
 
