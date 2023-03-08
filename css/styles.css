@@ -520,9 +520,13 @@ body {
 
   /* =========FOOTER========= */
 
+  .footer {
+    width: 268px;
+    margin: 0 auto;
+  }
+
   .footer-list-text {
     text-align: start;
-    width: 308px;
   }
 
   .logo-footer {
@@ -629,7 +633,7 @@ body {
 
     font-size: 12px;
     line-height: 2;
-    width: 200px;
+    width: 398px;
 
     letter-spacing: 0.04em;
 
