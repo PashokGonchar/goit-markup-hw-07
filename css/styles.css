@@ -1513,6 +1513,15 @@ input {
   .works-cards-item {
     margin-bottom: 48px;
   }
+  .modal {
+    max-width: 408px;
+    width: 100%;
+  }
+
+  .modal-form {
+    max-width: 360px;
+    width: 100%;
+  }
 }
 
 /* ===============TABLET DISPLAY 0 > 1199 PX =============== */
@@ -1542,7 +1551,7 @@ input {
   .overlay {
     display: none;
   }
-  
+
   /* ====================PORTFOLIO=================== */
 
   .nav-button-all {
