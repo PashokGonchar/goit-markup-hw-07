@@ -1542,10 +1542,7 @@ input {
   .overlay {
     display: none;
   }
-  .backdrop {
-    display: none;
-  }
-
+  
   /* ====================PORTFOLIO=================== */
 
   .nav-button-all {
