@@ -1219,6 +1219,10 @@ input {
 
   /* =========WORKS CARDS========= */
 
+  .works-cards {
+    justify-content: center;
+  }
+
   .works-cards-item {
     margin-right: 24px;
     margin-bottom: 48px;
