@@ -1042,6 +1042,28 @@ input {
   .subscription-mail {
     width: 264px;
   }
+
+/* =======================PORTFOLIO================= */
+
+.container.navigation{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.works-cards-item {
+  flex-basis: calc((100% - 1 * 24px ) / 2);
+  margin-right: 24px;
+  margin-bottom: 72px;
+}
+
+.works-cards-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.works-cards-item:last-child{
+  margin-bottom: 0;
+}
+
 }
 
 /* ===============DISPLAY > 1200 PX =============== */
