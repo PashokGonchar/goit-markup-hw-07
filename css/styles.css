@@ -1032,13 +1032,11 @@ input {
   }
 
   .works-cards-item {
-    flex-basis: calc((100% - 1 * 24px) / 2);
-    margin-right: 24px;
     margin-bottom: 72px;
   }
 
-  .works-cards-item:nth-child(2n) {
-    margin-right: 0;
+  .works-cards {
+    justify-content: space-between;
   }
 
   .works-cards-item:last-child {
