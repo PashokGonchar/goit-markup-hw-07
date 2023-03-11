@@ -178,11 +178,11 @@ body {
 
 .hero-text {
   font-family: var(--primary-font);
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 1.11;
   width: 100%;
-  max-width: 330px;
+  max-width: 496px;
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin: 0 auto 72px;
@@ -252,7 +252,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--navy-color);
 }
 
@@ -927,16 +927,16 @@ input {
       url(../images/Dark-bg_tablet.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    max-height: 432px;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     padding-top: 112px;
     padding-bottom: 112px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 190dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 190dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px){
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1076,16 +1076,18 @@ input {
       ),
       url(../images/hero-image.jpg);
     background-size: cover;
-    max-width: 1440px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* max-width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     padding-top: 188px;
     padding-bottom: 188px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 190dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 190dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px){
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1165,7 +1167,7 @@ input {
 
   .customers-list {
     display: flex;
-    padding-top: 72px;
+    margin-top: 72px;
     gap: 24px;
 
     flex-wrap: nowrap;
@@ -1368,6 +1370,7 @@ input {
   }
 
   .mobile-tel {
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.12;
@@ -1418,6 +1421,18 @@ input {
 
   /* =========HERO========= */
 
+.hero-text {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  width: 100%;
+  max-width: 320px;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin: 0 auto 72px;
+}
+
   .hero {
     background-color: var(--navy-color);
     text-align: center;
@@ -1428,7 +1443,7 @@ input {
       url(../images/dark-bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    max-height: 432px;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     padding-top: 112px;
@@ -1471,14 +1486,20 @@ input {
 
   /* =========CUSTOMERS========= */
 
+  .container.customers {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .customers-list-item {
     padding-top: 72px;
+    margin: 0 auto;
   }
 
   /* =========FOOTER========= */
@@ -1498,9 +1519,9 @@ input {
     margin-bottom: 17.5px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 190dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 190dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
